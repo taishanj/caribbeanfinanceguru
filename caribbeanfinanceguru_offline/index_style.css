@@ -1,0 +1,141 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f0f0f5;
+}
+.wrapper {
+  width: 95%;
+  margin: auto;
+}
+/*banner details*/
+.wa-alert {
+  display: flex;
+  margin-top: 5em;
+}
+.alert {
+  /* margin: auto; */
+  /* width: 50%; */
+  padding: 20px;
+  background-color: #04AA6D;
+  color: white;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+/***************/
+
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+.start_btn
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+/* styling the boxes */
+.boxes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box-area {
+  padding: 30px;
+}
+.box_area_inner {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  padding-bottom: 34px;
+}
+.box-img{
+  height: 350px;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+}
+.box-desc {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+.box-desc button {
+  border: none;
+  outline: none;
+  color: #007bff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  /* border: 1px solid #04AA6D; */
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgb(194, 194, 194);
+}
+.box-desc button:hover {
+  color: #04aa6d;
+  background: #fff;
+  transform: translateY(-6px);
+}
+
+.footer-text {
+  width: 90%;
+  margin: 2em auto 0;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  padding: 40px 0;
+}
+
+/* media queries */
+@media screen and (max-width: 575px) {
+  .box-area {
+    padding: 0;
+  }
+  .box-area {
+    width: 97%;
+    margin-bottom: 2.5em;
+  } 
+}
